@@ -1,0 +1,137 @@
+<!doctype HTML>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="js/DB.js"></script>
+    <script type="text/javascript" src="js/FONETICS.js"></script>
+</head>
+    
+<title>漢字世界</title>
+
+<body>
+
+<header class="flex__jcontent_start">
+    <div id="logo" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+        <img src="img/logo.png">
+    </div>
+   
+    <nav id="mainNav">
+        <li><a href="home.html">Поиск в Unihan</a></li>
+        <li><a href="fsearch.html">Поиск по фонетику</a></li>
+        <li><a class="active" href="fmap.html">Карта фонетиков</a></li>
+        <li><a href="ffamily.html">Фонетические семьи</a></li>
+        <li><a href="ffont.html">Шрифт фонетиков</a></li>
+        <li><a href="about.html">О проекте</a></li>
+    </nav>
+    
+     <p id="copyright">@2018 Dmitry Grechko</p>
+</header>
+
+<main>
+    <h1>Карта фонетиков</h1>
+    <div>Раздел в разработке.<br><br></div>
+    <div id="fmap">
+    <div>Большинство китайских иероглифов представляет из себя фоноидеограммы, состоящие из смыслового элемента (ключа) и фонетического элемента (фонетика), поэтому их можно представить суммой данных элементов:</div>
+    <div><br>棚 = 木 + 朋</div>
+    <div>碄 = 石 + 林</div>
+    <div>и т.д.</div>
+    <div><br>Такую структуру можно представить в виде матрицы (двумерной таблицы), вдоль строк которой расположены ключи, а вдоль столбцов - фонетики (или наоборот), а на пересечении строк и столбцов располагаются соответствующие иероглифы.</div>
+        
+    <table id="fTable">
+        <tr>
+            <td></td>
+            <td>艹</td>
+            <td>竹</td>
+            <td>木</td>
+            <td>禾</td>
+            <td>水</td>
+            <td>石</td>
+            <td>山</td>
+        </tr>
+        <tr>
+            <td>朋</td>
+            <td></td>
+            <td></td>
+            <td id="first">棚</td>
+            <td>稝</td>
+            <td>淜</td>
+            <td>硼</td>
+            <td>崩</td>
+        </tr>
+        <tr>
+            <td>番</td>
+            <td>蕃</td>
+            <td></td>
+            <td>橎</td>
+            <td></td>
+            <td>潘</td>
+            <td>磻</td>
+            <td>嶓</td>
+        </tr>
+        <tr>
+            <td>林</td>
+            <td>菻</td>
+            <td>箖</td>
+            <td></td>
+            <td>淋</td>
+            <td></td>
+            <td>碄</td>
+            <td>崊</td>
+        </tr>       
+        <tr>
+            <td>包</td>
+            <td>苞</td>
+            <td>笣</td>
+            <td>枹</td>
+            <td></td>
+            <td>泡</td>
+            <td>砲</td>
+            <td></td>
+        </tr>        
+        <tr>
+            <td>方</td>
+            <td>芳</td>
+            <td></td>
+            <td>枋</td>
+            <td></td>
+            <td>汸</td>
+            <td></td>
+            <td></td>
+        </tr>   
+        <tr>
+            <td>良</td>
+            <td>莨</td>
+            <td>筤</td>
+            <td>桹</td>
+            <td>稂</td>
+            <td>浪</td>
+            <td>硠</td>
+            <td>崀</td>
+        </tr>
+        <tr>
+            <td>各</td>
+            <td>茖</td>
+            <td>笿</td>
+            <td>格</td>
+            <td></td>
+            <td>洛</td>
+            <td>硌</td>
+            <td>峈</td>
+        </tr>  
+    </table>
+    
+    <div>Данный фрагмент карты фонетиков создан вручную. В дальнейшем планируется разработка алгоритма автоматического формирования карты фонетиков на основе баз фонетиков и Unihan.</div>
+    </div>
+</main>
+
+
+
+</body>
+
+<script type="text/javascript" src="js/MAIN.js"></script>
+
+</html>

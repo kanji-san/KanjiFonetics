@@ -1,0 +1,56 @@
+<!doctype HTML>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="js/DB.js"></script>
+    <script type="text/javascript" src="js/FONETICS.js"></script>
+</head>
+    
+<title>漢字世界</title>
+
+<body>
+
+<header class="flex__jcontent_start">
+    <div id="logo" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+        <img src="img/logo.png">
+    </div>
+   
+    <nav id="mainNav">
+        <li><a href="home.html">Поиск в Unihan</a></li>
+        <li><a href="fsearch.html">Поиск по фонетику</a></li>
+        <li><a href="fmap.html">Карта фонетиков</a></li>
+        <li><a class="active" href="ffamily.html">Фонетические семьи</a></li>
+        <li><a href="ffont.html">Шрифт фонетиков</a></li>
+        <li><a href="about.html">О проекте</a></li>
+    </nav>
+    
+    <p id="copyright">@2018 Dmitry Grechko</p>
+</header>
+
+<main>
+    <h1>Фонетические семьи</h1>
+    <div>Раздел в разработке.<br><br></div>
+    <div id="ffamily">
+    <div>В структуре фонетиков можно выделить элементарные и производные фонетики. Например, иероглиф 固 содержит фонетик 古, определяющий его чтение. В свою очередь иероглиф 固 сам является фонетиком, например, для иероглифа 個. Такую картину можно представить следующей схемой: </div>
+    <div><br>古→固呄</div>
+    <div>古→固→個箇</div>
+    <div><br>Таким образом, 古 — это элементарный фонетик, поскольку не содержит в себе вложенных фонетиков, а 固 — производный фонетик.</div>
+    <div><br>Фонетическая семья (род) - это такая компоновка, которая учитывает взаимосвязь элементарного и произвдного фонетиков.</div><br>
+    <a rel="nofollow" target="_blank" href="img/ffamily.png">
+        <img id="img" src="img/ffamily.png"></img>
+    </a>
+    <div><br>Данный пример фонетической семьи создан вручную. В дальнейшем планируется разработка алгоритма автоматического формирования  фонетической семьи на основе баз фонетиков и Unihan. При этом пользователь сможет задавать ряд входных условий, например: только японский, только китайский, два языка и др.</div><br><br>
+    </div>
+</main>
+
+
+
+</body>
+
+<script type="text/javascript" src="js/MAIN.js"></script>
+
+</html>

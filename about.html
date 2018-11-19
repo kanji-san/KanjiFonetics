@@ -1,0 +1,47 @@
+<!doctype HTML>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="js/DB.js"></script>
+    <script type="text/javascript" src="js/FONETICS.js"></script>
+</head>
+    
+<title>漢字世界</title>
+
+<body>
+
+<header class="flex__jcontent_start">
+    <div id="logo" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+        <img src="img/logo.png">
+    </div>
+   
+    <nav id="mainNav">
+        <li><a href="home.html">Поиск в Unihan</a></li>
+        <li><a href="fsearch.html">Поиск по фонетику</a></li>
+        <li><a href="fmap.html">Карта фонетиков</a></li>
+        <li><a href="ffamily.html">Фонетические семьи</a></li>
+        <li><a href="ffont.html">Шрифт фонетиков</a></li>
+        <li><a class="active" href="about.html">О проекте</a></li>
+    </nav>
+ 
+    <p id="copyright">@2018 Dmitry Grechko</p>
+</header>
+
+<main>
+    <h1>О проекте</h1>
+    <div id="about">
+        <div>Kanji-world - это веб-приложение, основанное на JavaScript и предназначенное для анализа чтений китайских иероглифов исходя из фонетика в их составе. Анализ возможно проводить для китайского, японского и корейского языков, а также кантонского диалекта китайского языка.<br><br>Предполагается учет внутренней вложенной структуры фонетика. Для этого введены понятия элементарного и производного фонетика (см. раздел <a href=ffamily.html>ФОНЕТИЧЕСКИЕ СЕМЬИ</a>).<br><br>В настоящее время основная работа заключается в поиске фонетиков и внесении их в базу данных. Просмотр базы фонетиков реализован в разделе <a href=fsearch.html>ПОИСК ПО ФОНЕТИКУ</a>. Поскольку часть фонетиков отсутствует в стандартных шрифтах, то для решения этой проблемы был создан собственный шрифт Fonetics (см. раздел <a href=ffont.html>ШРИФТ ФОНЕТИКОВ</a>). Проект также использует стороннюю открытую базу данных Unihan для получения основных сведений о иерглифе. Поиск по базе Unihan реализован в разделе <a href=home.html>ПОИСК В UNIHAN</a>. <br><br>После окончания стадии поиска фонетиков (либо параллельно с ней) планируется реализовать несколько алгоритмов для визуализации полученных данных (подробнее см. разделы <a href=fmap.html>КАРТА ФОНЕТИКОВ</a> и <a href=ffamily.html>ФОНЕТИЧЕСКИЕ СЕМЬИ</a>). <br><br>На данный момент поиск фонетиков завершен примерно на 25%.</div>
+   </div>
+</main>
+
+
+
+</body>
+
+<script type="text/javascript" src="js/MAIN.js"></script>
+
+</html>

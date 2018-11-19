@@ -1,0 +1,60 @@
+<!doctype HTML>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript" src="js/DB.js"></script>
+    <script type="text/javascript" src="js/FONETICS.js"></script>
+</head>
+    
+<title>漢字世界</title>
+
+<body>
+
+<header class="flex__jcontent_start">
+    <div id="logo" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+        <img src="img/logo.png">
+    </div>
+   
+    <nav id="mainNav">
+        <li><a href="home.html">Поиск в Unihan</a></li>
+        <li><a href="fsearch.html">Поиск по фонетику</a></li>
+        <li><a href="fmap.html">Карта фонетиков</a></li>
+        <li><a href="ffamily.html">Фонетические семьи</a></li>
+        <li><a class="active" href="ffont.html">Шрифт фонетиков</a></li>
+        <li><a href="about.html">О проекте</a></li>
+    </nav>
+    
+    <p id="copyright">@2018 Dmitry Grechko</p>
+</header>
+
+<main>
+    <h1>Шрифт фонетиков</h1>
+    <div id="ffont">
+    <div>Одна из сложностей при работе с фонетиками заключается в том, что некоторые из них не представлены в шрифтах, поскольку не являются ни иероглифами, ни ключами. Работать с такими знаками как с картинками в рамках веб-приложения также неудобно, поэтому я создал для них свой шрифт Fonetics.ttf в редакторе шрифтов.</div>
+    <div>Например фонетик, получаемый вычитанием из 撤 ключа 扌 невозможно отобразить с использованием стандартных шрифтов, но с шрифтом Fonetic такая возможность появляется.</div><br>
+    
+    <img id="fsimple" src="img/fsimple.jpg"></img>
+    
+    <div><br>Для шрифта фонетиков я использовал диапазон кодовых точек в Юникоде, начиная с A000. Изначально в этом диапазоне располагаются символы письменности народности И, проживающей на территории Китая.</div><br>
+    
+    <a rel="nofollow" target="_blank" href="img/ffont.jpg">
+        <img id="img" src="img/ffont.jpg"></img>
+    </a>
+    
+    <div><br>Поэтому если шрифт Fonetics.ttf установился не корректно, то вместо части фонетиков вы увидите символы из диапазона выше. Красиво, но не это не то, что нужно в нашем случае. К сожалению, такое может случиться если вы используете, например, браузер Internet Explorer. Дело в том, что данный браузер не поддерживает загрузку с сайта шрифтов формата .ttf. Для него необходимы шрифты формата EOT (Embedded OpenType). Пока шрифт в этом формате не готов, поэтому рекомендую использовать другой браузер, например Chrome. Или как вариант — скачать шрифт Fonetic.ttf по ссылке ниже и установить его вручную локально. </div><br>
+    <a id="download" href="Fonetics.ttf" download>Скачать</a>
+    <br><br>
+    </div>
+</main>
+
+
+
+</body>
+
+<script type="text/javascript" src="js/MAIN.js"></script>
+
+</html>

@@ -1,0 +1,48 @@
+<!doctype HTML>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/MAIN.js"></script>
+    <script type="text/javascript" src="js/DB.js"></script>
+    <script type="text/javascript" src="js/FONETICS.js"></script>
+</head>
+    
+<title>漢字世界</title>
+
+<body>
+
+<header class="flex__jcontent_start">
+    <div id="logo" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+        <img src="img/logo.png">
+    </div>
+   
+    <nav id="mainNav">
+        <li><a href="home.html">Поиск в Unihan</a></li>
+        <li><a class="active" href="fsearch.html">Поиск по фонетику</a></li>
+        <li><a href="fmap.html">Карта фонетиков</a></li>
+        <li><a href="ffamily.html">Фонетические семьи</a></li>
+        <li><a href="ffont.html">Шрифт фонетиков</a></li>
+        <li><a href="about.html">О проекте</a></li>
+    </nav>
+    
+    <p id="copyright">@2018 Dmitry Grechko</p>
+</header>
+
+<main>
+    <h1>Поиск по фонетику</h1>
+     
+    <div id="fList"></div>
+    <div id="fInfo"></div>
+    <div id="SymByFon"></div>
+    <div id="unihanResult"></div>
+    
+</main>
+
+<script>showFlist()</script>
+
+</body>
+
+</html>

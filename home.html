@@ -1,0 +1,60 @@
+<!doctype HTML>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/MAIN.js"></script>
+    <script type="text/javascript" src="js/DB.js"></script>
+    <script type="text/javascript" src="js/FONETICS.js"></script>
+</head>
+    
+<title>漢字世界</title>
+
+<body>
+
+<header class="flex__jcontent_start">
+    <div id="logo" class="main_flex__nowrap flex__jcontent_center flex__align-items_center">
+        <img src="img/logo.png">
+    </div>
+   
+    <nav id="mainNav">
+        <li><a class="active" href="home.html">Поиск в Unihan</a></li>
+        <li><a href="fsearch.html">Поиск по фонетику</a></li>
+        <li><a href="fmap.html">Карта фонетиков</a></li>
+        <li><a href="ffamily.html">Фонетические семьи</a></li>
+        <li><a href="ffont.html">Шрифт фонетиков</a></li>
+        <li><a href="about.html">О проекте</a></li>
+    </nav>
+    
+
+    <p id="copyright">@2018 Dmitry Grechko</p>
+</header>
+
+<main>
+    <h1>Поиск в Unihan</h1>
+    
+    <div id="keyList">
+        <div><input id="r1" name="select" type="radio" value="0" checked><label for="r1">Иероглиф</label></div>
+        <div><input id="r2" name="select" type="radio" value="9"><label for="r2">Путунхуа</label></div>
+        <div><input id="r3" name="select" type="radio" value="1" ><label for="r3">Кантонский</label></div>
+        <div><input id="r4" name="select" type="radio" value="7" ><label for="r4">Японский (ОН)</label></div>
+        <div><input id="r5" name="select" type="radio" value="6" ><label for="r5">Японский (КУН)</label></div>
+        <div><input id="r6" name="select" type="radio" value="3" ><label for="r6">Хангыль</label></div>
+        <div><input id="r7" name="select" type="radio" value="8" ><label for="r7">Корейский (транскр.)</label></div>
+    </div>
+    
+    <input id="inputValue" value="漢" onkeypress=pressEnter(selectKey(),this.value,event)>
+    
+    <div id="searchButton">
+        <a href=JavaScript:pressButton(selectKey(),document.getElementById('inputValue').value)>Поиск</a><a href='JavaScript:clearText()'>Очистить</a>
+    </div>
+    <div id="symList"></div>
+    <div id="unihanResult"></div>
+</main>
+
+
+</body>
+
+</html>
